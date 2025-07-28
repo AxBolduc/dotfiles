@@ -4,3 +4,4 @@ vim.g.snacks_animate = false
 
 vim.g.neovide_input_macos_alt_is_meta = true
 vim.g.ai_cmp = false
+vim.g.root_spec = { "cwd" }

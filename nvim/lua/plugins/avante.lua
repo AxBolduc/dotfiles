@@ -8,15 +8,7 @@ return {
   lazy = false,
   version = false, -- set this to "*" if you want to always pull the latest change, false to update on release
   opts = {
-    provider = "deepseek",
-    vendors = {
-      deepseek = {
-        __inherited_from = "openai",
-        api_key_name = "DEEPSEEK_API_KEY",
-        endpoint = "https://api.deepseek.com",
-        model = "deepseek-chat",
-      },
-    },
+    provider = "copilot",
     file_selector = {
       provider = "fzf",
       provider_opts = {},
