@@ -2,6 +2,34 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     inlay_hints = { enabled = false },
+    servers = {
+      eslint = {
+        enabled = true,
+      },
+      oxlint = {
+        enabled = true,
+        mason = false,
+      },
+      tsgo = {
+        enabled = false,
+      },
+      vtsls = {
+        settings = {
+          typescript = {
+            preferences = {
+              importModuleSpecifier = "relative",
+            },
+          },
+        },
+      },
+      tinymist = {
+        settings = {
+          formatterMode = "typstyle",
+          exportPdf = "onType",
+          semanticTokens = "disable",
+        },
+      },
+    },
   },
 }
 --
