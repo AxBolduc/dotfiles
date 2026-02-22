@@ -1,0 +1,33 @@
+{
+  "sound": true,
+  "notification": true,
+  "timeout": 5,
+  "showProjectName": true,
+  "command": {
+    "enabled": false,
+    "path": "/path/to/command",
+    "args": ["--event", "{event}", "--message", "{message}"],
+    "minDuration": 0
+  },
+  "events": {
+    "permission": { "sound": true, "notification": true },
+    "complete": { "sound": true, "notification": false },
+    "subagent_complete": { "sound": false, "notification": false },
+    "error": { "sound": true, "notification": true },
+    "question": { "sound": true, "notification": true }
+  },
+  "messages": {
+    "permission": "Session needs permission",
+    "complete": "Session has finished",
+    "subagent_complete": "Subagent task completed",
+    "error": "Session encountered an error",
+    "question": "Session has a question"
+  },
+  "sounds": {
+    "permission": "/path/to/custom/sound.wav",
+    "complete": "/Users/alex.bolduc/.config/opencode/apple-pay-sound.mp3",
+    "subagent_complete": "/path/to/custom/sound.wav",
+    "error": "/path/to/custom/sound.wav",
+    "question": "/path/to/custom/sound.wav"
+  }
+}

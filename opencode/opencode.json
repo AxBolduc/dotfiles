@@ -1,0 +1,25 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "tools": {
+    "write": true
+  },
+  "plugin": ["@mohak34/opencode-notifier@latest"],
+  "mcp": {
+    "aspida": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "bun",
+        "run",
+        "--cwd",
+        "/Users/alex.bolduc/Documents/aspida-mcp",
+        "mcp"
+      ]
+    },
+    "opensrc": {
+      "type": "local",
+      "command": ["npx", "-y", "opensrc-mcp"],
+      "enabled": true
+    }
+  }
+}
