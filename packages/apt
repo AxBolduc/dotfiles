@@ -1,0 +1,11 @@
+# Debian/Ubuntu packages (one per line).
+curl
+fd-find
+fzf
+gh
+git
+neovim
+ripgrep
+stow
+tmux
+zoxide

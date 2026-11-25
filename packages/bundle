@@ -1,0 +1,17 @@
+# What the configs in home/ need. Add with: dot package add <name>
+brew "fd"
+brew "fzf"
+brew "gh"
+brew "git"
+brew "lazygit"
+brew "neovim"
+brew "ripgrep"
+brew "sesh"
+brew "stow"
+brew "tmux"
+brew "zoxide"
+
+cask "ghostty"
+# Ghostty's font. Enable on a new Mac; here the files are already in
+# ~/Library/Fonts and the cask would refuse to overwrite them.
+# cask "font-caskaydia-cove-nerd-font"

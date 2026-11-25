@@ -1,0 +1,12 @@
+# Arch packages (one per line).
+curl
+fd
+fzf
+git
+github-cli
+lazygit
+neovim
+ripgrep
+stow
+tmux
+zoxide
