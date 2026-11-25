@@ -75,7 +75,7 @@ teardown() {
     run "$DOT_TEST_BIN" components --names
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "homebrew" ]
-    [ "${lines[${#lines[@]}-1]}" = "oh_my_tmux" ]
+    [ "${lines[${#lines[@]}-1]}" = "fish" ]
 }
 
 @test "a symlinked dot finds its repo" {

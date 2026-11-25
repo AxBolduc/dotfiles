@@ -10,3 +10,9 @@ home/.config/opencode/package-lock.json
 home/.config/opencode/bun.lock
 home/.config/tmux/plugins/
 home/.config/tmux/tmux.conf
+
+# Fish: machine-local and generated. Plugins come from fish_plugins (dot's fish component).
+home/.config/fish/fish_variables*
+home/.config/fish/conf.d/secrets.fish
+home/.config/fish/conf.d/work.fish
+home/.config/fish/functions/zdd.fish

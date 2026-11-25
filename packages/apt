@@ -9,3 +9,5 @@ ripgrep
 stow
 tmux
 zoxide
+bat
+fish

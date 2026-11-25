@@ -5,7 +5,7 @@ __define_component stow all required "Stow dotfiles"
 # in ~ so stow links the entries inside them; on a fresh machine stow would
 # otherwise link the whole directory (~/.config -> repo) and every app's config
 # would land in this repo.
-STOW_SHARED_DIRECTORIES=(.config .config/opencode .config/tmux)
+STOW_SHARED_DIRECTORIES=(.config .config/fish .config/fish/completions .config/fish/conf.d .config/fish/functions .config/opencode .config/tmux)
 
 component_stow_install() {
     __stow_dotfiles

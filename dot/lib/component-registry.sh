@@ -13,6 +13,7 @@ DOT_COMPONENT_ORDER=(
     submodules      # opencode/superpowers; before stow, which links into it
     stow            # symlink home/ into ~
     oh_my_tmux      # clone + ~/.config/tmux/tmux.conf
+    fish            # Fisher plugins from fish_plugins; after stow
 )
 
 # Names defined so far, in definition order (the loader defines them in run order).

@@ -1,5 +1,8 @@
 # What the configs in home/ need. Add with: dot package add <name>
+brew "bat"
+brew "eza"
 brew "fd"
+brew "fish"
 brew "fzf"
 brew "gh"
 brew "git"
