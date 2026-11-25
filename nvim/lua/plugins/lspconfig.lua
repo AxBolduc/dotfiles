@@ -4,14 +4,11 @@ return {
     inlay_hints = { enabled = false },
     servers = {
       eslint = {
-        enabled = true,
+        enabled = false,
       },
       oxlint = {
         enabled = true,
         mason = false,
-      },
-      tsgo = {
-        enabled = false,
       },
       vtsls = {
         settings = {
@@ -19,6 +16,9 @@ return {
             preferences = {
               importModuleSpecifier = "relative",
             },
+          },
+          vtsls = {
+            autoUseWorkspaceTsdk = true,
           },
         },
       },
@@ -29,6 +29,10 @@ return {
           semanticTokens = "disable",
         },
       },
+      kotlin_language_server = {
+        enabled = false,
+      },
+      kotlin_lsp = {},
     },
   },
 }

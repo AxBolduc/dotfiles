@@ -475,14 +475,23 @@ bind-key "S" choose-tree
 bind-key x kill-pane # skip "kill-pane 1? (y/n)" prompt
 set -g detach-on-destroy off  # don't exit from tmux when closing a session
 
+# tmux 3.8 defaults popups/menus to bg=themedarkgrey (gray15 on dark, gray45 on
+# light themes), which clashes with the terminal. Use the terminal's own colours.
+set -g popup-style 'bg=default,fg=default'
+set -g popup-border-style 'bg=default,fg=#303030'
+set -g menu-style 'bg=default,fg=default'
+set -g menu-border-style 'bg=default,fg=#303030'
+
 set -g @plugin '2kabhishek/tmux-tea'
 set -g @tea-default-command 'nvim'
 set -g @tea-alt-bind false
 set -g @tea-bind 's'
+set -g @tea-eza-options "-1 --group-directories-first --icons --color=always"
 
 set -s extended-keys on
 set -as terminal-features 'xterm*:extkeys'
 
+set -g extended-keys-format csi-u
 
 
 # # /!\ do not remove the following line
